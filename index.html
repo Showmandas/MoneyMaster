@@ -9,38 +9,44 @@
 </head>
 <body>
     <div class="wrapper">
-        <div class="moneyImg"></div><!--/moneyImg-->
-        <div class="moneyForm">
-            <h3>Income</h3>
+        <h1>Money Master <img src="images/money.png" id="MoneyLogo" alt=""></h1>
+        <div class="container">
+            <div class="moneyImg">
+                <img src="images/Picture.png" id="moneyimg" alt="">
+            </div><!--/moneyImg-->
+            <div class="moneyForm">
+                <h3>Income</h3>
+                    <div class="form-div">
+                        <label>Income:</label>
+                        <input type="text" id="income">
+                    </div>
+                    <h3>Expanses</h3>
+                    <div class="form-div">
+                        <label>Food:</label>
+                        <input type="text" id="food">
+                    </div>
+                    <div class="form-div">
+                        <label>Rent:</label>
+                        <input type="text" id="rent">
+                    </div>
+                    <div class="form-div">
+                        <label>Clothes:</label>
+                        <input type="text" id="clothes">
+                    </div>
+                    <button id="calculate">calculate</button><br>
+                
+                <p>Total Expenses: <span id="expense"></span></p>
+                <p>Balance: <span id="balance"></span></p>
                 <div class="form-div">
-                    <label>Income:</label>
-                    <input type="text" id="income">
+                    <label>save</label>
+                    <input type="text" id="save"> <span> % </span>
+                    <button id="savebtn">save</button>
                 </div>
-                <h3>Expanses</h3>
-                <div class="form-div">
-                    <label>Food:</label>
-                    <input type="text" id="food">
-                </div>
-                <div class="form-div">
-                    <label>Rent:</label>
-                    <input type="text" id="rent">
-                </div>
-                <div class="form-div">
-                    <label>Clothes:</label>
-                    <input type="text" id="clothes">
-                </div>
-                <button id="calculate">calculate</button>
-            
-            <p>Total Expenses: <span id="expense"></span></p>
-            <p>Balance: <span id="balance"></span></p>
-            <div class="form-div">
-                <label>save</label>
-                <input type="text" id="save"> <span> % </span>
-                <button id="savebtn">save</button>
-            </div>
-            <p>saving amount: <span id="savingAmount"></span></p>
-            <p>Remaining amount: <span id="remainAmount"></span></p>
-        </div><!--/moneyForm-->
+                <p>Saving amount: <span id="savingAmount"></span></p>
+                <p>Remaining amount: <span id="remainAmount"></span></p>
+            </div><!--/moneyForm-->
+        </div><!--/container-->
+        
     </div><!--/wrapper-->
     <script src="main.js"></script>
 </body>
