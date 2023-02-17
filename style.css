@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
 }
 
 #MoneyLogo{
@@ -111,4 +113,33 @@ margin-bottom: 1rem;
 }
 
 
+/* responsive  */
 
+@media screen and (max-width:576px){
+.moneyForm,.wrapper,.moneyImg,#moneyimg{
+    margin: 0;
+    width: 100%;
+    padding: 1rem;
+}    
+.container{
+    flex-direction: column-reverse;
+    /* gap: 5rem; */
+
+}
+}
+
+@media screen and (min-width:577px) and (max-width:900px){
+.wrapper,.moneyImg,#moneyimg{
+    margin: 0;
+    width: 100%;
+    padding: 1rem;
+}    
+.moneyForm{
+    width: 90%;
+}
+.container,.wrapper{
+    flex-direction: column;
+    /* gap: 5rem; */
+
+}
+}

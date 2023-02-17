@@ -6,12 +6,16 @@ calculate.addEventListener('click',function(){
 let rent=parseFloat(document.getElementById('rent').value);
 let clothes=parseFloat(document.getElementById('clothes').value);
 
+   if(document.getElementById('income').value == '' || document.getElementById('food').value == '' || document.getElementById('rent').value == '' || document.getElementById('clothes').value == ''){
+    alert('Pls fill up all fields');
+   }
+   else{
     let totalExpenseStr=food+rent+clothes;
     document.getElementById('expense').innerText=totalExpenseStr;
-
     let totalExpense=parseFloat(totalExpenseStr);
     let balanceStr=income-totalExpense;
     document.getElementById('balance').innerText=balanceStr;
+   }
 
 })
 
