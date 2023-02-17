@@ -12,7 +12,6 @@
         <div class="moneyImg"></div><!--/moneyImg-->
         <div class="moneyForm">
             <h3>Income</h3>
-            <form>
                 <div class="form-div">
                     <label>Income:</label>
                     <input type="text" id="income">
@@ -31,10 +30,18 @@
                     <input type="text" id="clothes">
                 </div>
                 <button id="calculate">calculate</button>
-            </form>
-            <p>Total Expanses: <span id="expanse"></span></p>
+            
+            <p>Total Expenses: <span id="expense"></span></p>
             <p>Balance: <span id="balance"></span></p>
+            <div class="form-div">
+                <label>save</label>
+                <input type="text" id="save"> <span> % </span>
+                <button id="savebtn">save</button>
+            </div>
+            <p>saving amount: <span id="savingAmount"></span></p>
+            <p>Remaining amount: <span id="remainAmount"></span></p>
         </div><!--/moneyForm-->
     </div><!--/wrapper-->
+    <script src="main.js"></script>
 </body>
 </html>
