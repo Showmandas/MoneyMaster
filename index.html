@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Money Master</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="moneyImg"></div><!--/moneyImg-->
+        <div class="moneyForm">
+            <h3>Income</h3>
+            <form>
+                <div class="form-div">
+                    <label>Income:</label>
+                    <input type="text" id="income">
+                </div>
+                <h3>Expanses</h3>
+                <div class="form-div">
+                    <label>Food:</label>
+                    <input type="text" id="food">
+                </div>
+                <div class="form-div">
+                    <label>Rent:</label>
+                    <input type="text" id="rent">
+                </div>
+                <div class="form-div">
+                    <label>Clothes:</label>
+                    <input type="text" id="clothes">
+                </div>
+                <button id="calculate">calculate</button>
+            </form>
+            <p>Total Expanses: <span id="expanse"></span></p>
+            <p>Balance: <span id="balance"></span></p>
+        </div><!--/moneyForm-->
+    </div><!--/wrapper-->
+</body>
+</html>
